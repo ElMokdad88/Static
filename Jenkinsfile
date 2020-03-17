@@ -10,7 +10,7 @@ pipeline {
                 '''
          withAWS(credentials: 'aws static', region: 'us-east-1') {
 
-            s3Upload(bucket:'elmokdad-jenkins-udacity',file:'index.html')
+            s3Upload(bucket:'elmokdad-jenkins-udacity',file:'Index.html')
 
                 }
             }
