@@ -12,3 +12,6 @@ pipeline {
         }
     }
 }
+withAWS(region:'us-east-1') {
+    // do something
+}
