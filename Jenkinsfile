@@ -8,10 +8,12 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
+         withAWS(credentials: 'aws static', region: 'us-east-1') {
+
+            s3Upload(bucket:'elmokdad-jenkins-udacity',file:'index.html')
+
+                }
             }
         }
     }
-}
-withAWS(region:'us-east-1') {
-    // do something
 }
