@@ -9,9 +9,7 @@ pipeline {
             ls -lah
         '''
         }
-
       }
     }
-
   }
 }
